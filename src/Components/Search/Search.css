@@ -1,0 +1,34 @@
+.Search{
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Search_Videos{
+    padding: 20px;
+    height: calc(100vh - 90px);
+    width: calc(100% - 180px);
+      border: 1px solid #222;
+      overflow: auto; 
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(6,1fr);
+      gap: 20px;
+    }
+    @media screen and (max-width:1000px) {
+      .Search_Videos{
+        grid-template-columns: repeat(2,1fr);
+      }
+      @media screen and (max-width:700px) {
+        .Search_Videos{
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(20,1fr);
+        }
+        
+      }
+      @media screen and (max-width:480px) {
+        .Search_Videos{
+          width: 100%;
+          
+        }
+      }
+    }

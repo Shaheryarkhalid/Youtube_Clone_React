@@ -1,0 +1,68 @@
+.Side-Bar{
+    position: relative;
+    height: calc(100vh - 90px);
+    width: 180px;
+    border-right: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.Side-Bar .Nav-Options{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+.Side-Bar .Nav-Options span{
+    margin-right: 2px;
+    padding: 9px;
+    cursor: pointer;
+    border-radius: 13px;
+    transition: all 0.3s linear;
+    color: #ddd;
+    font-size:clamp(0.5rem,5vw,0.8rem);
+}
+.Side-Bar .Nav-Options span:hover{
+    background-color: var(--Youtube-Red);
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.Side-Bar .Nav-Options span:hover>i{
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.Side-Bar .Nav-Options span i{
+    margin-right: 10px;
+    color: var(--Youtube-Red);
+}
+.Side-Bar .Copyright{   
+    position: absolute;
+    bottom: 10px;
+    color: #555;
+    background-color: #000;
+}
+  @media screen and (max-width:600px) {
+      .Side-Bar{
+          width: 160px;
+          padding: 10px;
+        }
+        @media screen and (max-width:480px) {
+            .Side-Bar{
+                width: 100%;
+                height:80px;
+            }
+            .Side-Bar .Nav-Options{
+                flex-direction: row;
+            }
+            .Side-Bar .Nav-Options span{
+                display: flex;
+                text-wrap: nowrap;
+                height: 40px;
+            }
+            .Side-Bar .Nav-Options span i{
+            }
+            .Side-Bar .Copyright{   
+                display: none;
+            }
+        }
+  }

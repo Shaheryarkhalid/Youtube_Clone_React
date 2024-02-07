@@ -1,0 +1,57 @@
+.Video_Card{
+    position: relative;
+    height: 345px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Video_Card:hover> .Thumbnail{
+    border-radius:2px;
+    transition: all 0.3s linear;
+}
+.Video_Card .Thumbnail{
+    width: 100%;
+    height: 60%;
+    object-fit:cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.Video_Card .Other_Details{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.Video_Card .Other_Details .Channel_Image{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.Video_Card .Other_Details .Text_Details{
+    margin-left: 20px;
+}
+.Video_Card .Other_Details .Text_Details .Title{
+    max-height: 4.5ch;
+    padding-bottom:10px;
+    padding-top:5px;
+    color: #ddd;
+    overflow: hidden;
+}
+.Video_Card .Other_Details .Text_Details .Channel_Name{
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color:#888;
+}
+.Video_Card .Other_Details .Text_Details .View_Details{
+    padding-top: 5px;
+    font-size: 0.8rem;
+}
+.Video_Card .Other_Details .Text_Details .View_Details span{
+    color:#888;
+    margin-right: 10px;
+}
